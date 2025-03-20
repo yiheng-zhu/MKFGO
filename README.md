@@ -20,6 +20,9 @@ MFKGO is a composite protein function prediction model in the context of Gene On
     Note: These two databases should be formatted by the "makeblastdb" command in BLAST software.  
 (3) Library of MFKGO
 
+### 4. Benchmark Datasets
+    The benchmark datasets of MKFGO can be downloaded from here.
+
 ## Prediction
 1. rename your protein sequence file as "test.fasta" with fasta format.
 2. create a new directory (e.g. test_example), which contains the "test.fasta"  
