@@ -8,7 +8,7 @@ Tensorflow-gpu==2.6.0
 
 How to use the MFKGO model?  
 1. Install software  
-(1) BLAST, https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+(1) BLAST, https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/  
 (2) SPOT-1D-LM, https://github.com/jas-preet/SPOT-1D-LM
 
 
