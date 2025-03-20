@@ -21,6 +21,12 @@ MFKGO is a composite protein function prediction model in the context of Gene On
 (3) Libary of MFKGO
 
 ## Prediction
- 
+(1) rename your protein sequence file as "test.fasta" with fasta format.
+(2) create a new directory (e.g. test_example), which contains the "test.fasta"  
+(3) modify the file paths in config.py  
+(3) Running prediction: python main_process.py ./test_example/ 1 (or 0) 
+    "1" means that we run all of five pipelines for GO predictions
+    "0" means taht we run four pipelines excluding the DLMGO for GO predictions.
+                        
 
 
