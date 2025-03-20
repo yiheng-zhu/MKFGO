@@ -41,6 +41,10 @@ def read_data(pssm_feature_dir, hc_ss_feature_dir, hc_interpro_feature_dir, name
     print("Loading label.......")
 
     label = np.loadtxt(one_hot_label_file)
+    label = np.array(label)
+    if label.ndim == 1:
+        label = label[np.newaxis, :]
+
 
     print("Loading length.......")
 

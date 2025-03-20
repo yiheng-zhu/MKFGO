@@ -14,6 +14,14 @@ def read_data(workdir, go_type):  # read feature, label, name
     test_label_file = os.path.join(workdir, go_type, plm_test_label_onehot)
     test_label = np.loadtxt(test_label_file)
 
+    test_label = np.array(test_label)
+    if test_label.ndim == 1:
+        test_label = test_label[np.newaxis, :]
+
+    test_feature = np.array(test_feature)
+    if test_feature.ndim == 1:
+        test_feature = test_feature[np.newaxis, :]
+
 
     test_name_file = os.path.join(workdir, go_type, plm_test_name)
     test_name = read_name_list(test_name_file)
