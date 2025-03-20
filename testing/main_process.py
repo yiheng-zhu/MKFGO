@@ -14,10 +14,19 @@ def main_process(workdir, is_use_dlmgo):
     hc.main_process(workdir)
     pm.main_process(workdir)
     nm.main_process(workdir)
-    ppm.main_process(workdir)
+
+    try:
+        ppm.main_process(workdir)
+    except Exception as e:
+        print(e)
 
     if(is_use_dlmgo):
-        gm.main_process(workdir)
+        
+        try:
+            gm.main_process(workdir)
+        except Exception as e:
+            print(e)
+
 
     em.main_process(workdir, is_use_dlmgo)
 
