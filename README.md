@@ -18,6 +18,7 @@ MFKGO is a composite protein function prediction model in the context of Gene On
 (1) <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  
 (2) <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0 (protein.sequences.v12.0.fa.gz)</a>  
     Note: These two databases should be formatted by the "makeblastdb" command in BLAST software.  
+(3) Libary of MFKGO
  
 
 
