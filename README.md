@@ -43,4 +43,9 @@ MFKGO is a composite protein function prediction model in the context of Gene On
    (f) ./test_example/ensemble/ (The final ensemble prediction results of MKFGO integrating all of five pipelines, see details in final_cross_entropy_MF/BP/CC_new)  
    (g) ./test_example/ensemble_withoutdlmgo/ (The final ensemble prediction results of MKFGO integrating four pipelines without DLMGO, see details in final_cross_entropy_MF/BP/CC_new)             
 
+## Training (Optional)
+### 1. HFRGO
+
+
+
 
