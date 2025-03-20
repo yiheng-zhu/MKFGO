@@ -16,7 +16,8 @@ MFKGO is a composite protein function prediction model in the context of Gene On
 (5) <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a>, used to generate DNA language model-based feature.
 ### 3. Database  
 (1) <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  
-(2) <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0</a>
+(2) <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0 (protein.sequences.v12.0.fa.gz)</a>
+   These two databases should be formatted by the "makeblastdb" command in BLAST software.  
  
 
 
