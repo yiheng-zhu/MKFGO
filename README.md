@@ -7,7 +7,9 @@ Python==3.8.5
 Tensorflow-gpu==2.6.0  
 
 How to use the MFKGO model?  
-（1）
+1. Install software  
+(1) BLAST software, see details in https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ 
+
 
 
 
