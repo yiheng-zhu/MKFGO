@@ -1,0 +1,2 @@
+model_checkpoint_path: "/data/yihengzhu/GOA/resource/benchmark_gene_new7/prottrans_back//MF/model/1//model500-500"
+all_model_checkpoint_paths: "/data/yihengzhu/GOA/resource/benchmark_gene_new7/prottrans_back//MF/model/1//model500-500"
