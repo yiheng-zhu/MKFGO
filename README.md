@@ -15,6 +15,7 @@ MFKGO is a composite protein function prediction model in the context of Gene On
 (4) <a href="https://github.com/agemagician/ProtTrans">ProtTrans Transformers</a>, used to generate protein language model-based feature.  
 (5) <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a>, used to generate DNA language model-based feature.
 ### 3. Database  
-
+(1) <a href="https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz">Swiss-Prot database</a>,
+ 
 
 
