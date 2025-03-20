@@ -50,13 +50,12 @@ MFKGO is a composite protein function prediction model in the context of Gene On
    (c) Extract generate_interpro_feature.py, see details in ./testing/generate_interpro_feature.py  
    (d) Training HFRGO, see details in ./training/LSTM_Combine_PSSM_SS_InterPro_Attention_Triplet.py  
 ### 2. PLMGO
-   (a) Extract Prottrans features  
-    see details in ./testing/prottrans_extract.py
+   (a) Extract Prottrans features, see details in ./testing/prottrans_extract.py  
    (b) Training PLMGO: see details in ./training/Triplet_Network_With_Global_Loss.py
 ### 3. PPIGO
-    see details in ./testing/ppi_method.py
+   (a) see details in ./testing/ppi_method.py
 ### 4. NAIGO
-    see details in ./testing/naive_method.py
+   (b) see details in ./testing/naive_method.py
 ### 5. DLMGO
    (a) download gene sequence using UniProt ID, see details in ./testing/download_gene_sequence.py  
    (b) extract feature embeddings using the Nucleotide Transformers, see details in ./testing/nctrans_extract.py  
