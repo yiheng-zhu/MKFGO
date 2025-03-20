@@ -37,8 +37,8 @@ MFKGO is a composite protein function prediction model in the context of Gene On
 5. Outputs  
    (a) ./test_example/hand_craft/ (The prediction results for HFRGO, see details in final_cross_entropy_MF/BP/CC_new)  
    (b) ./test_example/plm/ (The prediction results for PLMGO, see details in final_cross_entropy_MF/BP/CC_new)  
-   (c) ./test_example/ppi/ (The prediction results for PPIGO, see details in ppi_result_MF/BP/CC_new)
-   (d) ./test_example/naive/ (The prediction results for NAIGO, see details in naive_result_MF/BP/CC_new)
+   (c) ./test_example/ppi/ (The prediction results for PPIGO, see details in ppi_result_MF/BP/CC_new)  
+   (d) ./test_example/naive/ (The prediction results for NAIGO, see details in naive_result_MF/BP/CC_new)  
    (e) ./test_example/glm/ (The prediction results for DLMGO, see details in final_cross_entropy_MF/BP/CC_new)               
 
 
