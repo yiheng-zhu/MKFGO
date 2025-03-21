@@ -6,11 +6,13 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 ### 1. Conda Environment: 
 (1) python==3.8.5  
   
-(2) Tensorflow-gpu==2.6.0  
+(2) tensorflow-gpu==2.6.0  
+
+(3) pytorch==2.0.0  
   
-(3) CUDA>=11.3  
+(4) CUDA>=11.7  
   
-(4) cudnn>=8.2.1 
+(5) cudnn>=8.2.1 
 ### 2. Software  
 (1) <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a>, used to generate PSSM feature. 
   
