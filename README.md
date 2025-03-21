@@ -76,43 +76,73 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 
 ## Training (Optional)
 ### 1. HFRGO
-   (a) Extract PSSM features  
-   <code> see details in ./testing/generate_pssm_feature.py</code>  
+   <li> Extract PSSM features
      
-   (b) Extract SSCM features  
-   <code> see details in ./testing/generate_ss_feature.py </code> 
+   <code> ./testing/generate_pssm_feature.py</code>  
+   </li>
      
-   (c) Extract generate_interpro_feature.py  
-   <code>see details in ./testing/generate_interpro_feature.py</code>  
+   <li> Extract SSCM features  
+
+   <code> ./testing/generate_ss_feature.py </code> 
+   </li>
      
-   (d) Training HFRGO  
-   <code>see details in ./training/LSTM_Combine_PSSM_SS_InterPro_Attention_Triplet.py</code>  
-### 2. PLMGO
-   (a) Extract Prottrans features  
-   <code>see details in ./testing/prottrans_extract.py</code>  
+   <li> Extract generate_interpro_feature.py  
      
-   (b) Training PLMGO  
-   <code> see details in ./training/Triplet_Network_With_Global_Loss.py </code>
-### 3. PPIGO
-   <code>see details in ./testing/ppi_method.py</code>
-### 4. NAIGO
-   <code>see details in ./testing/naive_method.py </code>
-### 5. DLMGO
-   (a) download gene sequence using UniProt ID  
-       <code>see details in ./testing/download_gene_sequence.py</code>  
-         
-   (b) extract feature embeddings using the Nucleotide Transformers  
-       <code>see details in ./testing/nctrans_extract.py</code>  
-         
-   (c) Training DLMGO  
-       <code>see details in ./training/Triplet_Network_With_Global_Loss.py</code>  
-### 6. Ensembles
-   (a) Create data file  
-   <code> see details in ./training/Create_Single_Sample_File.py </code>  
-      
-   (b) Training MKFGO using fully connected neural networks  
-   <code> see details in ./training/MLP_Ensemble_SKL.py  </code>
+   <code> ./testing/generate_interpro_feature.py</code>  
+   </li>
+     
+   <li> Training HFRGO  
+     
+   <code> ./training/LSTM_Combine_PSSM_SS_InterPro_Attention_Triplet.py</code>  
+   </li>
    
+### 2. PLMGO
+   <li> Extract Prottrans features  
+     
+   <code> ./testing/prottrans_extract.py</code>  
+   </li>
+     
+   <li> Training PLMGO  
+     
+   <code> ./training/Triplet_Network_With_Global_Loss.py </code>
+   </li>
+   
+### 3. PPIGO
+   <code> ./testing/ppi_method.py</code>
+   
+### 4. NAIGO
+   <code> ./testing/naive_method.py </code>
+   
+### 5. DLMGO
+
+   <li> Download gene sequence using UniProt ID  
+     
+   <code>./testing/download_gene_sequence.py</code>  
+   </li>
+         
+   <li> Extract feature embeddings using the Nucleotide Transformers  
+     
+   <code>./testing/nctrans_extract.py</code>  
+   </li>
+         
+   <li> Training DLMGO  
+     
+   <code>./training/Triplet_Network_With_Global_Loss.py</code>  
+  </li>
+  
+### 6. Ensembles
+   <li> Create data file  
+     
+   <code> ./training/Create_Single_Sample_File.py </code>  
+   </li>
+      
+   <li> Training MKFGO using fully connected neural networks  
+     
+   <code> ./training/MLP_Ensemble_SKL.py  </code>
+   </li>
+   
+### 7. Evaluation
+<code> ./training/Evaluation.py </code>  
 
 
 
