@@ -59,28 +59,20 @@ MKFGO is a composite protein function prediction model in the context of Gene On
    <li> naive_method.py  (NAIGO) </li>   
    <li> glm_method.py  (DLMGO) </li>
    <li> ensemble_method.py (ensemble procedure for five GO prediction pipelines) </li>
+   </ul>
      
 6. Outputs  
-   (a) ./test_example/hand_craft/  
-   The prediction results for HFRGO, see details in final_cross_entropy_MF/BP/CC_new
-     
-   (b) ./test_example/plm/  
-   The prediction results for PLMGO, see details in final_cross_entropy_MF/BP/CC_new
-       
-   (c) ./test_example/ppi/    
-   The prediction results for PPIGO, see details in ppi_result_MF/BP/CC_new
-     
-   (d) ./test_example/naive/  
-   The prediction results for NAIGO, see details in naive_result_MF/BP/CC_new
-     
-   (e) ./test_example/glm/  
-   The prediction results for DLMGO, see details in final_cross_entropy_MF/BP/CC_new
-      
-   (f) ./test_example/ensemble/  
-   The final ensemble prediction results of MKFGO integrating all of five pipelines, see details in final_cross_entropy_MF/BP/CC_new
-     
-   (g) ./test_example/ensemble_withoutdlmgo/  
-   The final ensemble prediction results of MKFGO integrating four pipelines without DLMGO, see details in final_cross_entropy_MF/BP/CC_new            
+   <ul>
+   <li> ./test_example/pssm/   &nbsp&nbsp&nbsp ### &nbsp PSSM features &nbsp ### </li>
+   <li> ./test_example/ss/  &nbsp&nbsp&nbsp ### &nbsp SSCM features &nbsp ### </li>
+   <li> ./test_example/interpro/   &nbsp&nbsp&nbsp ### &nbsp FDBV features &nbsp ### </li>
+   <li> ./test_example/hand_craft/   &nbsp&nbsp&nbsp ### &nbsp The prediction results for HFRGO &nbsp ### </li>
+   <li> ./test_example/plm/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for PLMGO &nbsp ### </li>
+   <li> ./test_example/ppi/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for PPIGO &nbsp ### </li>
+   <li> ./test_example/naive/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for NAIGO &nbsp ### </li>
+   <li> ./test_example/glm/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for DLMGO &nbsp ### </li>
+   <li> ./test_example/ensemble/    &nbsp&nbsp&nbsp ### &nbsp The ensemble prediction results of all five pipelines &nbsp ###</li>
+   <li> ./test_example/ensemble_withoutdlmgo/    &nbsp&nbsp&nbsp ### &nbsp The ensemble prediction results of four pipelines without DLMGO &nbsp ### </li>         
 
 ## Training (Optional)
 ### 1. HFRGO
