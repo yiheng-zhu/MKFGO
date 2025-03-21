@@ -4,27 +4,29 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 
 ## System Requirements
 ### 1. Conda Environment: 
-(1) python==3.8.5  
+<li> python==3.8.5  </li>
   
-(2) tensorflow-gpu==2.6.0  
+<li> tensorflow-gpu==2.6.0 </li>  
+  
+<li> pytorch==2.0.0  </li>
+   
+<li> CUDA>=11.7  </li>
+   
+<li> cudnn>=8.2.1 </li>  
 
-(3) pytorch==2.0.0  
-  
-(4) CUDA>=11.7  
-  
-(5) cudnn>=8.2.1 
+
 ### 2. Software  
-(1) <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a>, generate PSSM feature. 
+<li> <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate PSSM feature &nbsp ###### </li>
   
-(2) <a href="https://github.com/jas-preet/SPOT-1D-LM">SPOT-1D-LM</a> , generate SSCM feature.  
+<li> <a href="https://github.com/jas-preet/SPOT-1D-LM">SPOT-1D-LM</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######   &nbsp generate SSCM feature &nbsp ######  </li>
   
-(3) <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a> , generate FDBV feature.  
+<li> <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate FDBV feature &nbsp ######  </li>
   
-(4) <a href="https://github.com/agemagician/ProtTrans">ProtTrans Transformers</a>, generate protein language model-based feature.  
+<li> <a href="https://github.com/agemagician/ProtTrans">ProtTrans Transformers</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate protein language model-based feature &nbsp ######  </li>
 
-(5) <a href="https://github.com/facebookresearch/esm">ESM-1b Transformers</a>, generate protein language model-based feature used in SPOT-1D-LM.
+<li> <a href="https://github.com/facebookresearch/esm">ESM-1b Transformers</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######  &nbsp generate protein language model-based feature used in SPOT-1D-LM &nbsp ###### </li>
   
-(6) <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a>, generate DNA language model-based feature.
+<li> <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######  &nbsp generate DNA language model-based feature &nbsp ######  </li>
 ### 3. Data
 (1) <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  
   
@@ -32,23 +34,29 @@ MKFGO is a composite protein function prediction model in the context of Gene On
   
 (3) Library of MKFGO  
   
-(4) benchmark datasets  
+(4) Benchmark datasets  
   
 Note: These two databases should be formatted by the "makeblastdb" command in BLAST software.  
 
 ## Prediction
-1. rename your protein sequence file as "test.fasta" with fasta format.
-2. create a new directory (e.g. test_example), which contains the "test.fasta"  
-3. modify the file paths of the above-mentioned sofwares and databases in config.py
+1. Rename your protein sequence file as "test.fasta" with fasta format.
+2. Create a new directory (e.g. test_example), which contains the "test.fasta"  
+3. Modify the file paths of the above-mentioned sofwares and databases in the ./testing/config.py
   
-4. Running prediction  
+4. Running prediction
+     
    <code> python ./testing/main_process.py ./test_example/ 1 (or 0)</code>
      
-    "1" means that we run all of five pipelines for GO predictions.  
-    "0" means that we run four pipelines excluding the DLMGO for GO predictions.
+    "1" means that we run all of five pipelines for GO predictions.
      
-   (a) hand_craft_method.py (HFRGO)  
-   (b) plm_method.py (PLMGO)  
+    "0" means that we run four pipelines excluding the DLMGO for GO predictions.
+
+   In main_process.py, five python scripts are orderly performed, including:
+     
+   (a) hand_craft_method.py (HFRGO)
+     
+   (b) plm_method.py (PLMGO)
+     
    (c) ppi_method.py (PPIGO)
    (d) naive_method.py  (NAIGO)    
    (e) glm_method.py  (DLMGO)  
