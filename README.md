@@ -14,15 +14,17 @@ MKFGO is a composite protein function prediction model in the context of Gene On
   
 (5) cudnn>=8.2.1 
 ### 2. Software  
-(1) <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a>, used to generate PSSM feature. 
+(1) <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a>, generate PSSM feature. 
   
-(2) <a href="https://github.com/jas-preet/SPOT-1D-LM">SPOT-1D-LM</a> , used to generate SSCM feature.  
+(2) <a href="https://github.com/jas-preet/SPOT-1D-LM">SPOT-1D-LM</a> , generate SSCM feature.  
   
-(3) <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a> , used to generate FDBV feature.  
+(3) <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a> , generate FDBV feature.  
   
-(4) <a href="https://github.com/agemagician/ProtTrans">ProtTrans Transformers</a>, used to generate protein language model-based feature.  
+(4) <a href="https://github.com/agemagician/ProtTrans">ProtTrans Transformers</a>, generate protein language model-based feature.  
+
+(5) <a href="https://github.com/facebookresearch/esm">ESM-1b Transformers</a>, generate protein language model-based feature used in SPOT-1D-LM.
   
-(5) <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a>, used to generate DNA language model-based feature.
+(6) <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a>, generate DNA language model-based feature.
 ### 3. Data
 (1) <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  
   
