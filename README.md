@@ -26,17 +26,16 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 
 <li> <a href="https://github.com/facebookresearch/esm">ESM-1b Transformers</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######  &nbsp generate protein language model-based feature used in SPOT-1D-LM &nbsp ###### </li>
   
-<li> <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######  &nbsp generate DNA language model-based feature &nbsp ######  </li>
+<li> <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformers</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp######  &nbsp generate DNA language model-based feature &nbsp ######  </li>  
+
 ### 3. Data
-(1) <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  
+<li> <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  </li>
   
-(2) <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0 (protein.sequences.v12.0.fa.gz)</a>  
+<li> <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0 (protein.sequences.v12.0.fa.gz)</a>  </li>
   
-(3) Library of MKFGO  
+<li> Library of MKFGO  </li>
   
-(4) Benchmark datasets  
-  
-Note: These two databases should be formatted by the "makeblastdb" command in BLAST software.  
+<li> Benchmark datasets </li>  
 
 ## Prediction
 1. Rename your protein sequence file as "test.fasta" with fasta format.
@@ -46,21 +45,20 @@ Note: These two databases should be formatted by the "makeblastdb" command in BL
 4. Running prediction
      
    <code> python ./testing/main_process.py ./test_example/ 1 (or 0)</code>
+   <ul>
      
-    "1" means that we run all of five pipelines for GO predictions.
-     
-    "0" means that we run four pipelines excluding the DLMGO for GO predictions.
+    <li> "1" means that we run all of five pipelines for GO predictions. </li>  
+    <li>"0" means that we run four pipelines excluding the DLMGO for GO predictions. </li>
+   </ul>
 
    In main_process.py, five python scripts are orderly performed, including:
-     
-   (a) hand_craft_method.py (HFRGO)
-     
-   (b) plm_method.py (PLMGO)
-     
-   (c) ppi_method.py (PPIGO)
-   (d) naive_method.py  (NAIGO)    
-   (e) glm_method.py  (DLMGO)  
-   (f) ensemble_method.py (ensemble procedure for five GO prediction pipelines)
+   <ul>  
+   <li> hand_craft_method.py (HFRGO) </li>
+   <li> plm_method.py (PLMGO) </li>
+   <li> ppi_method.py (PPIGO) </li>
+   <li> naive_method.py  (NAIGO) </li>   
+   <li> glm_method.py  (DLMGO) </li>
+   <li> ensemble_method.py (ensemble procedure for five GO prediction pipelines) </li>
      
 6. Outputs  
    (a) ./test_example/hand_craft/  
