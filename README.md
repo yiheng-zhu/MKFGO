@@ -4,7 +4,7 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 
 ## System Requirements
 ### 1. Conda Environment: 
-(1) Python==3.8.5  
+(1) python==3.8.5  
 (2) Tensorflow-gpu==2.6.0  
 (3) CUDA>=11.3  
 (4) cudnn>=8.2.1 
