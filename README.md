@@ -33,9 +33,10 @@ MKFGO is a composite protein function prediction model in the context of Gene On
   
 <li> <a href="https://string-db.org/cgi/download">PPI sequence database with the version of 12.0 (protein.sequences.v12.0.fa.gz)</a>  </li>
   
-<li> Library of MKFGO  </li>
+<li> <a href="http://www.jcu-qiulab.com/static/servers/GOA/library.zip">Library of MKFGO </a>  </li>
+
+<li> <a href="http://www.jcu-qiulab.com/static/servers/GOA/benchmark_dataset.zip">Benchmark datasets</a>  </li>
   
-<li> Benchmark datasets </li>  
 
 ## Prediction
 1. Rename your protein sequence file as "test.fasta" with fasta format.
