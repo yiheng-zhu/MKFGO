@@ -58,7 +58,7 @@ MKFGO is a composite protein function prediction model in the context of Gene On
    <li> plm_method.py (PLMGO) </li>
    <li> ppi_method.py (PPIGO) </li>
    <li> naive_method.py  (NAIGO) </li>   
-   <li> glm_method.py  (DLMGO) </li>
+   <li> glm_method.py  (DLMGO, which support function prediction for non-coding genes with DNA sequence inputs) </li>
    <li> ensemble_method.py (ensemble procedure for five GO prediction pipelines) </li>
    </ul>
      
