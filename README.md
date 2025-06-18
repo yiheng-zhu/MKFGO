@@ -58,11 +58,11 @@ MKFGO is a composite protein function prediction model in the context of Gene On
    <li> plm_method.py (PLMGO) </li>
    <li> ppi_method.py (PPIGO) </li>
    <li> naive_method.py  (NAIGO) </li>   
-   <li> glm_method.py  (DLMGO, which support function prediction for <b> non-coding genes </b> with DNA sequence inputs) </li>
+   <li> glm_method.py  (DLMGO) </li>
    <li> ensemble_method.py (ensemble procedure for five GO prediction pipelines) </li>
    </ul>
      
-6. Outputs  
+5. Outputs  
    <ul>
    <li> ./test_example/pssm/   &nbsp&nbsp&nbsp ### &nbsp PSSM features &nbsp ### </li>
    <li> ./test_example/ss/  &nbsp&nbsp&nbsp ### &nbsp SSCM features &nbsp ### </li>
@@ -73,7 +73,15 @@ MKFGO is a composite protein function prediction model in the context of Gene On
    <li> ./test_example/naive/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for NAIGO &nbsp ### </li>
    <li> ./test_example/glm/    &nbsp&nbsp&nbsp ### &nbsp The prediction results for DLMGO &nbsp ### </li>
    <li> ./test_example/ensemble/    &nbsp&nbsp&nbsp ### &nbsp The ensemble prediction results of all five pipelines &nbsp ###</li>
-   <li> ./test_example/ensemble_withoutdlmgo/    &nbsp&nbsp&nbsp ### &nbsp The ensemble prediction results of four pipelines without DLMGO &nbsp ### </li>         
+   <li> ./test_example/ensemble_withoutdlmgo/    &nbsp&nbsp&nbsp ### &nbsp The ensemble prediction results of four pipelines without DLMGO &nbsp ### </li>
+   </ul>
+
+6. Non-conding gene function prediction (Optional)  
+   DLMGO support function prediction for non-coding genes with DNA sequence inputs, complementing with the existing gene function prediction models (e.g., TripletGO).   
+   e.g., python glm_method_non_conding.py ./test_example/seq.fasta  
+   seq.fasta contains the DNA sequences for query non-conding genes  
+   The prediction results could be found in ./test_example/glm/ 
+   
 
 ## Training (Optional)
 ### 1. HFRGO
