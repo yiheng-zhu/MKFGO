@@ -82,7 +82,7 @@ MKFGO is a composite protein function prediction model in the context of Gene On
    </li>
    <li> e.g., python glm_method_non_conding.py ./test_example/seq.fasta  
    </li>
-   <li>seq.fasta contains the DNA sequences for query non-conding genes
+   <li>seq.fasta contains the DNA sequences for query non-coding genes
    </li>
    <li>
        The prediction results could be found in ./test_example/glm/ 
