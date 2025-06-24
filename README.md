@@ -78,14 +78,15 @@ MKFGO is a composite protein function prediction model in the context of Gene On
 
 6. Non-coding gene function prediction (Optional)  
    <ul>
-   <li>DLMGO supports function prediction for <b> non-coding genes </b> using DNA sequences as input, complementing existing gene function prediction models such as TripletGO. You can directly run the <b>glm_method_non_coding.py </b> to perform function prediction for non-coding genes.
+   <li>DLMGO supports function prediction for <b> non-coding genes </b> using DNA sequences as input, complementing existing gene function prediction models such as TripletGO. </li>
+   <li>You can directly run the <b>glm_method_non_coding.py </b> to perform function prediction for non-coding genes.
    </li>
-   <li> e.g., python glm_method_non_conding.py ./test_example/seq.fasta  
-   </li>
-   <li>seq.fasta contains the DNA sequences for query non-coding genes
+   <li> e.g., python glm_method_non_conding.py ./test_example/
+   <li>The input DNA sequences should be placed in ./test_example/gene_sequence/
    </li>
    <li>
        The prediction results could be found in ./test_example/glm/ 
+   </li>
    </li>
    
    </ul>
