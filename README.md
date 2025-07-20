@@ -2,6 +2,8 @@
 
 MKFGO is a composite protein function prediction model in the context of Gene Ontology (GO) through the integration of five complementary pipelines (i.e., HFRGO, PLMGO, PPIGO, NAIGP, and DLMGO) built on multi-source biological data. 
 
+The webserver of MKFGO is freely available at https://yiheng-zhu.github.io/Yiheng/mkfgo.html.  
+
 ## System Requirements
 ### 1. Conda Environment: 
 <li> python==3.8.5  </li>
